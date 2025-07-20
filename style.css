@@ -1,0 +1,109 @@
+* { 
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0; 
+      font-family: 'Segoe UI', sans-serif;
+    }
+    html, body { 
+      height: 100%;
+      display: flex;
+      flex-direction: column; 
+      background: linear-gradient(90deg, #c2e9fb, #a1c4fd); }
+
+    header, footer {
+      
+      backdrop-filter: blur(5px);
+      padding: 15px 30px;
+      text-align: center;
+      color: darkblue;
+      margin-top: 2px;
+    }
+
+    footer{
+      background-color: transparent;
+    }
+    
+
+    header nav a {
+      color: darkblue;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 20px;
+      
+      padding: 10px;
+      border-radius: 10px;
+      background: #a1c4fd ;
+      box-shadow: 2px  #a1c4fd;
+    }
+
+    
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: darkblue;
+      margin: 20px 0;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .calculator {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      max-width: 90%;
+    }
+
+    .display {
+      height: 60px;
+      font-size: 2em;
+      text-align: right;
+      padding: 10px;
+      background: #f1f5f9;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      overflow: auto;
+    }
+
+    .buttons{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    button {
+      font-size: 1.2em;
+      padding: 20px;
+      border: none;
+      border-radius: 10px;
+      background: #e2e8f0;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover { background: #cbd5e1; transform: scale(1.05); }
+
+    button.operator { background: #60a5fa; color: white; }
+    button.equal { background: #10b981; color: white; }
+    button.clear { background: #ef4444; color: white; }
+
+    footer {
+      text-align: center;
+      font-size: 16px;
+      color: darkblue;
+    }
+
+    footer a {
+      color: darkblue;
+      text-decoration: none;
+      font-weight: 500;
+    }
